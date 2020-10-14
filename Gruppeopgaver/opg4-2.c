@@ -1,0 +1,2 @@
+#include <stdio.h> 
+int main(void){ int m = 0, n = 0, k = 0; int output = 0; printf("Give m, n and k. (k should be above 0)"); scanf("%d%d%d", &m, &n, &k); for (int i = m <= n ? m : n; i <= m >= n ? m : n; i++) if(i % k == 0) output += i;printf("%d\n", output); return 0;  }
