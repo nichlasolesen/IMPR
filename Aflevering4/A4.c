@@ -11,7 +11,10 @@ int main(void) {
 
     printf("give 3 numbers \n");
     scanf("%lf %lf %lf", &a, &b, &c);
-    SolveQuadraticEquation(a, b, c);
+        if(a != 0 && b != 0 && c != 0)
+            SolveQuadraticEquation(a, b, c); 
+        else
+            return 0;
 
     while (a != 0 && b != 0 && c != 0)
     {
